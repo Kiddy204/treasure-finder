@@ -3,16 +3,19 @@ package ma.Kiddy204.treasurefinder.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
+import org.springframework.stereotype.Service;
 
 import ma.Kiddy204.treasurefinder.dao.UserRepository;
 import ma.Kiddy204.treasurefinder.domain.UserConverter;
 import ma.Kiddy204.treasurefinder.domain.UserVo;
 import ma.Kiddy204.treasurefinder.model.User;
 
-public class UserService implements IUserService {
+@Service
+public class UserService implements IUserService, CommandLineRunner {
 	@Autowired
 	private UserRepository userRepository;
 	

@@ -49,6 +49,11 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
+		    <groupId>org.apache.tomcat</groupId>
+		    <artifactId>tomcat-util-scan</artifactId>
+		    <version>9.0.16</version>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
